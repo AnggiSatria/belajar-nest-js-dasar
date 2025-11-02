@@ -102,3 +102,13 @@ Cara menambahkan atau generate module otomatis
 Jalankan perintah :
 
 nest generate module <nama path>
+
+Cara menambahkan atau generate controller
+
+Jalankan Perintah :
+
+nest generate controller <nama path>
+
+controller akan ditambahkan berikut dengan unit testnya dengan spec dari jest
+
+controller akan tergenerate langsung pada module yang tersedia di path yang di tuju
