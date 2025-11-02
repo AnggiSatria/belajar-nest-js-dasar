@@ -132,3 +132,18 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `@Options(path)` untuk **HTTP OPTIONS**
 - `@All(path)` untuk **semua HTTP Method**
 
+<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Request bahkan Nest Dapat menjalankan fungsi Express JS namun dengan object express.Request karena Nest JS sendiri menggunakan teknologi dari Express JS itu sendiri -->
+
+- `Saat membuat Routing, biasanya kita ingin mendapatkan informasi yang dikirim oleh pengguna, baik itu Query Param, Headers, Request Body dan lain-lain`
+- `Karena Nest JS secara default menggunakan Express, kita bisa menambahkan parameter express.Request dan menggunakan decorator @Req()`
+- `REKOMENDASI : Walaupun kita bisa menggunakan object express.Request, namun direkomendasikan kita langsung menyebutkan data yang dibutuhkan di parameter menggunakan Decorator yang sudah disediakan oleh Nest`
+
+<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Request antara lain -->
+
+- `@Req()` untuk **express.Request**
+- `@Param(key?)` untuk **req.params.key?**
+- `@Body(key?)` untuk **req.body.key?**
+- `@Query(key?)` untuk **req.query.key?**
+- `@Header(key?)` untuk **req.headers.key?**
+- `@Ip()` untuk **req.ip**
+- `@HostParam()` untuk **req.hosts**
