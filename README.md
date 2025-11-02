@@ -147,3 +147,19 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `@Header(key?)` untuk **req.headers.key?**
 - `@Ip()` untuk **req.ip**
 - `@HostParam()` untuk **req.hosts**
+
+<!-- Express HTTP Response, pada Nest memiliki feature yang sama untuk Response namun disarankan untuk langsung return -->
+
+- `Secara default, return value dari method di controller akan dijadikan response body untuk HTTP Response`
+- `Namun, kita juga bisa menggunakan express.Response jika kita mau, kita cukup menggunakan decorator @Res()`
+- `Jika kita menggunakan express.Response, kita wajib mengirim response pada express.Response tersebut, bukan lewat return value lagi`
+- `REKOMENDASI : Walaupun kita bisa menggunakan object express.Response, namun direkomendasikan kita langsung menggunakan return value pada method nya`
+- `NestJS juga menyediakan Decorator yang bisa digunakan pada method untuk mengubah informasi Response`
+
+<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Response antara lain -->
+
+- `@HTTPCode(code)` untuk **mengubah response status code**
+- `@Header(key, value)` untuk **mengubah response header**
+- `@Redirect(location, code)` untuk **melakukan redirect, lokasi redirect bisa diubah dengan mengembalikan data HTTPRedirectResponse**
+- `@Next()` untuk **express.NextFunction atau jika berhasil langsung lanjut ke eksekusi selanjutnya**
+
