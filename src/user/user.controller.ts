@@ -24,11 +24,20 @@ export class UserController {
 
     @Get('hello')
     // berikut contoh penggunaan Query menggunakan Detractor @Query dengan multiquery
-    sayHello(
+    // sayHello(
+    //     @Query('first_name') firstName: string,
+    //     @Query('last_name') lastName: string
+    // ): string {
+        
+    //     return `Hello ${firstName} ${lastName}`;
+    // }
+
+    // Sekarang saya akan mencoba ubah ini menggunakan Asynchronous
+
+    async sayHello(
         @Query('first_name') firstName: string,
         @Query('last_name') lastName: string
-    ): string {
-        
+    ): Promise<string> {
         return `Hello ${firstName} ${lastName}`;
     }
 

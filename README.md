@@ -163,3 +163,7 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `@Redirect(location, code)` untuk **melakukan redirect, lokasi redirect bisa diubah dengan mengembalikan data HTTPRedirectResponse**
 - `@Next()` untuk **express.NextFunction atau jika berhasil langsung lanjut ke eksekusi selanjutnya**
 
+<!-- Asynchronous Nest JS -->
+
+- `Sama seperti Handler di Express JS, di NestJS juga kita bisa menggunakan Asynchronous Method pada Controllernya`
+- `Dengan begitu kita bisa menggunakan Async Method dan return Promise<T> data`
