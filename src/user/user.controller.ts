@@ -73,6 +73,20 @@ export class UserController {
         }
     }
 
+    // Disini kita akan membuat handler untuk setCookienya dan getCookie menggunakan Cookie Parser
+    // Karena Cookie merupakan bawaan dari Express jadi kita diwajibkan menggunakan @Res atau express.Response
+
+    @Get('/set-cookie')
+    setCookie(@Query('name') name: string, @Res() response: Response){
+        response.cookie('name', name)
+        response.status(200).send('Success Set Cookie')
+    }
+
+    @Get('/get-cookie')
+    getCookie(@Req() request: Request): string{
+        return request.cookies['name']
+    }
+
     // Tambahan informasi Nest JS tidak membatasi Decorator namun biasakan urutan dinamis berada di paling bawah static first
 
     @Get("/:id")
@@ -86,6 +100,4 @@ export class UserController {
     getByIdParams(@Param("id") id: string ): string{
         return `Get ${id}`
     }
-
-
 }
