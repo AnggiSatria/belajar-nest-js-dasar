@@ -97,11 +97,11 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
-<!-- Decorator -->
+#Decorator
 
 Nest JS mendukung kinerja Decorator dari Javascript yang mana lebih mempermudah bahkan berguna untuk clean code
 
-<!-- Cara menambahkan atau generate module otomatis -->
+#Cara menambahkan atau generate module otomatis
 
 Jalankan perintah :
 
@@ -111,7 +111,7 @@ module akan otomatis terbuat di path yang di daftarkan
 
 lalu module akan otomatis tergenerate di app.module atau module utama untuk terinisialisasi pada aplikasi nest js
 
-<!-- Cara menambahkan atau generate controller -->
+#Cara menambahkan atau generate controller
 
 Jalankan Perintah :
 
@@ -121,7 +121,7 @@ controller akan ditambahkan berikut dengan unit testnya dengan spec dari jest
 
 controller akan tergenerate langsung pada module yang tersedia di path yang di tuju
 
-<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Method antara lain -->
+#Nest memiliki beberapa Decorator untuk mendukung HTTP Method antara lain
 
 - `@Get(path)` untuk **HTTP GET**
 - `@Post(path)` untuk **HTTP POST**
@@ -132,13 +132,13 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `@Options(path)` untuk **HTTP OPTIONS**
 - `@All(path)` untuk **semua HTTP Method**
 
-<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Request bahkan Nest Dapat menjalankan fungsi Express JS namun dengan object express.Request karena Nest JS sendiri menggunakan teknologi dari Express JS itu sendiri -->
+#Nest memiliki beberapa Decorator untuk mendukung HTTP Request bahkan Nest Dapat menjalankan fungsi Express JS namun dengan object express.Request karena Nest JS sendiri menggunakan teknologi dari Express JS itu sendiri
 
 - `Saat membuat Routing, biasanya kita ingin mendapatkan informasi yang dikirim oleh pengguna, baik itu Query Param, Headers, Request Body dan lain-lain`
 - `Karena Nest JS secara default menggunakan Express, kita bisa menambahkan parameter express.Request dan menggunakan decorator @Req()`
 - `REKOMENDASI : Walaupun kita bisa menggunakan object express.Request, namun direkomendasikan kita langsung menyebutkan data yang dibutuhkan di parameter menggunakan Decorator yang sudah disediakan oleh Nest`
 
-<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Request antara lain -->
+#Nest memiliki beberapa Decorator untuk mendukung HTTP Request antara lain
 
 - `@Req()` untuk **express.Request**
 - `@Param(key?)` untuk **req.params.key?**
@@ -148,7 +148,7 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `@Ip()` untuk **req.ip**
 - `@HostParam()` untuk **req.hosts**
 
-<!-- Express HTTP Response, pada Nest memiliki feature yang sama untuk Response namun disarankan untuk langsung return -->
+#Express HTTP Response, pada Nest memiliki feature yang sama untuk Response namun disarankan untuk langsung return
 
 - `Secara default, return value dari method di controller akan dijadikan response body untuk HTTP Response`
 - `Namun, kita juga bisa menggunakan express.Response jika kita mau, kita cukup menggunakan decorator @Res()`
@@ -156,14 +156,24 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `REKOMENDASI : Walaupun kita bisa menggunakan object express.Response, namun direkomendasikan kita langsung menggunakan return value pada method nya`
 - `NestJS juga menyediakan Decorator yang bisa digunakan pada method untuk mengubah informasi Response`
 
-<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Response antara lain -->
+#Nest memiliki beberapa Decorator untuk mendukung HTTP Response antara lain
 
 - `@HTTPCode(code)` untuk **mengubah response status code**
 - `@Header(key, value)` untuk **mengubah response header**
 - `@Redirect(location, code)` untuk **melakukan redirect, lokasi redirect bisa diubah dengan mengembalikan data HTTPRedirectResponse**
 - `@Next()` untuk **express.NextFunction atau jika berhasil langsung lanjut ke eksekusi selanjutnya**
 
-<!-- Asynchronous Nest JS -->
+#Asynchronous Nest JS
 
 - `Sama seperti Handler di Express JS, di NestJS juga kita bisa menggunakan Asynchronous Method pada Controllernya`
 - `Dengan begitu kita bisa menggunakan Async Method dan return Promise<T> data`
+
+#Cookie Nest JS
+
+- `Di Kelas NodeJS ExpressJS, kita sudah belajar tentang cara menggunakan Cookie di Express JS atau Server`
+- `Secara default, ExpressJS tidak mendukung Cookie, oleh karena itu kita harus gunakan library tambahan seperti cookie-parser`
+- `Untuk menggunakan di NestJS, kita bisa tambahkan ke app di file main.ts`
+
+#Menginstall Cookie Parse
+
+- `Sebelum menggunakan Cookie Parser, kita bisa menginstalnya menggunakan perintah : pnpm add cookie-parser untuk mendapatkan tipe datanya sekalian install pnpm add --save-dev @types/cookie-parser`
