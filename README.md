@@ -102,3 +102,7 @@ Cara menambahkan atau generate module otomatis
 Jalankan perintah :
 
 nest generate module <nama path>
+
+module akan otomatis terbuat di path yang di daftarkan
+
+lalu module akan otomatis tergenerate di app.module atau module utama untuk terinisialisasi pada aplikasi nest js
