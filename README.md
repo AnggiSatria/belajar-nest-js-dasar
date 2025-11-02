@@ -97,7 +97,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
-Cara menambahkan atau generate module otomatis
+*Cara menambahkan atau generate module otomatis
 
 Jalankan perintah :
 
@@ -106,3 +106,13 @@ nest generate module <nama path>
 module akan otomatis terbuat di path yang di daftarkan
 
 lalu module akan otomatis tergenerate di app.module atau module utama untuk terinisialisasi pada aplikasi nest js
+
+*Cara menambahkan atau generate controller
+
+Jalankan Perintah :
+
+nest generate controller <nama path>
+
+controller akan ditambahkan berikut dengan unit testnya dengan spec dari jest
+
+controller akan tergenerate langsung pada module yang tersedia di path yang di tuju
