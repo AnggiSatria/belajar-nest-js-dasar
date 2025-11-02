@@ -101,7 +101,7 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 Jalankan perintah :
 
-nest generate module <nama path>
+nest generate module nama-path
 
 module akan otomatis terbuat di path yang di daftarkan
 
@@ -111,7 +111,7 @@ lalu module akan otomatis tergenerate di app.module atau module utama untuk teri
 
 Jalankan Perintah :
 
-nest generate controller <nama path>
+nest generate controller nama-path
 
 controller akan ditambahkan berikut dengan unit testnya dengan spec dari jest
 
