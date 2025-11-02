@@ -123,12 +123,12 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 
 <!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Method antara lain -->
 
-@Get(path) untuk HTTP Get
-@Post(path) untuk HTTP Post
-@Put(path) untuk HTTP Put
-@Delete(path) untuk HTTP Delete
-@Patch(path) untuk HTTP Patch
-@Head(path) untuk HTTP Head
-@Options(path) untuk HTTP Options
-@All(path) untuk semua HTTP Method
+- `@Get(path)` untuk **HTTP GET**
+- `@Post(path)` untuk **HTTP POST**
+- `@Put(path)` untuk **HTTP PUT**
+- `@Delete(path)` untuk **HTTP DELETE**
+- `@Patch(path)` untuk **HTTP PATCH**
+- `@Head(path)` untuk **HTTP HEAD**
+- `@Options(path)` untuk **HTTP OPTIONS**
+- `@All(path)` untuk **semua HTTP Method**
 
