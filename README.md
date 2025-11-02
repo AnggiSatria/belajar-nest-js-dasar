@@ -97,7 +97,11 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
-*Cara menambahkan atau generate module otomatis
+<!-- Decorator -->
+
+Nest JS mendukung kinerja Decorator dari Javascript yang mana lebih mempermudah bahkan berguna untuk clean code
+
+<!-- Cara menambahkan atau generate module otomatis -->
 
 Jalankan perintah :
 
@@ -107,7 +111,7 @@ module akan otomatis terbuat di path yang di daftarkan
 
 lalu module akan otomatis tergenerate di app.module atau module utama untuk terinisialisasi pada aplikasi nest js
 
-*Cara menambahkan atau generate controller
+<!-- Cara menambahkan atau generate controller -->
 
 Jalankan Perintah :
 
@@ -116,3 +120,15 @@ nest generate controller nama-path
 controller akan ditambahkan berikut dengan unit testnya dengan spec dari jest
 
 controller akan tergenerate langsung pada module yang tersedia di path yang di tuju
+
+<!-- Nest memiliki beberapa Decorator untuk mendukung HTTP Method antara lain -->
+
+@Get(path) untuk HTTP Get
+@Post(path) untuk HTTP Post
+@Put(path) untuk HTTP Put
+@Delete(path) untuk HTTP Delete
+@Patch(path) untuk HTTP Patch
+@Head(path) untuk HTTP Head
+@Options(path) untuk HTTP Options
+@All(path) untuk semua HTTP Method
+
