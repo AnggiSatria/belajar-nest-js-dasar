@@ -87,6 +87,16 @@ export class UserController {
         return request.cookies['name']
     }
 
+    // Kita buat controller untuk mengirim hasil view versi HTML menggunakan mustache menggunakan Decorator 
+
+    @Get('view/hello')
+    viewHello(@Query('name') name : string, @Res() response: Response) {
+        response.render('index.html', {
+            title: 'Template Engine',
+            name: name
+        })
+    }
+
     // Tambahan informasi Nest JS tidak membatasi Decorator namun biasakan urutan dinamis berada di paling bawah static first
 
     @Get("/:id")
