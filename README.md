@@ -177,3 +177,13 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 #Menginstall Cookie Parse
 
 - `Sebelum menggunakan Cookie Parser, kita bisa menginstalnya menggunakan perintah : pnpm add cookie-parser untuk mendapatkan tipe datanya sekalian install pnpm add --save-dev @types/cookie-parser`
+
+#View Nest JS
+
+- `NestJS tidak memiliki template engine untuk membuat View, namun karena menggunakan ExpressJS, kita bisa menggunakan template engine yang bisa diintegrasikan dengan ExpressJS`
+- `Kita pernah bahas di kelas ExpressJS tentang menggunakan tentang menggunakan Mustache`
+- `Cara penggunaannya sama`
+
+#Menambahkan Library Mustache
+
+- `Kita bisa tambahkan library Mustache ke project yang kita buat : pnpm add mustache-express & pnpm add --save-dev @types/mustache-express`
