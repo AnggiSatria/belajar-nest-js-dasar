@@ -187,3 +187,15 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 #Menambahkan Library Mustache
 
 - `Kita bisa tambahkan library Mustache ke project yang kita buat : pnpm add mustache-express & pnpm add --save-dev @types/mustache-express`
+
+#Unit Test Nest JS
+
+- `Saat kita membuat Controller menggunakan perintah nest, secara otomatis akan dibuatkan template unit testnya`
+- `NestJS menggunakan Jest sebagai framework untuk Unit Testnya, sehingga mudah untuk dilakukan karena sebelumnya kita pernah belajar Jest di kelas NodeJS Unit Test`
+
+#Kekurangan Unit Test
+
+- `Saat menggunakan Unit Test, beberapa hal kadang akan menyulitkan untuk dilakukan, misal jika di Controller kita menggunakan parameter express.Request atau express.Response`
+- `Maka kita harus menggunakan Mock object, seperti yang sudah kita bahas di materi NodeJS Unit Test`
+- `Contoh, kita bisa menggunakan https://www.npmjs.com/package/node-mocks-http`
+- `pnpm add --save-dev node-mocks-http`
