@@ -199,3 +199,12 @@ controller akan tergenerate langsung pada module yang tersedia di path yang di t
 - `Maka kita harus menggunakan Mock object, seperti yang sudah kita bahas di materi NodeJS Unit Test`
 - `Contoh, kita bisa menggunakan https://www.npmjs.com/package/node-mocks-http`
 - `pnpm add --save-dev node-mocks-http`
+
+#Integration Test 
+
+- `Selain menyediakan Unit Test, saat kita membuat project NestJS, secara otomatis NestJS membuatkan Integration Test pada folder test`
+- `Integration Test di project NestJS menggunakan Jest dan Supertest`
+- `Hal ini sering kita praktekan pada kelas-kelas NodeJS dan Typescript, sehingga akan sangat mudah dilakukan`
+- `Secara default, nama file Integration Test di NestJS diakhiri dengan nama file e2e-spec.ts`
+- `e2e singkatan dari End to End`
+- `Kita bisa mengubah semua konfigurasinya pada file test/jest-e2e.json`
